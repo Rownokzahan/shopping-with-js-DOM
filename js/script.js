@@ -1,5 +1,5 @@
 let count = 1;
-
+let total = 0;
 document.getElementById('item-list').addEventListener('click', function (event) {
 
     // capturing the Buy Now buttons using its classes
@@ -29,8 +29,12 @@ document.getElementById('item-list').addEventListener('click', function (event) 
 
     document.getElementById('calculation-info').appendChild(row);
 
+    count++;
+    total += price * quantity;
+
+    // update total price
+    document.getElementById('calculation-info').parentElement.parentElement.children[1].children[0].innerText = total;
+
     // disable buy now button
     event.target.setAttribute('disabled', true);
-
-    count++;
 });
