@@ -10,7 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="max-w-[1440px] mx-auto">
 
     <header>
         <nav class="navbar bg-base-100 shadow-md md:px-12">
@@ -61,18 +61,22 @@
         </nav>
     </header>
 
-    <main class="p-6 md:p-12 md:grid grid-cols-3">
-        <section class="col-span-2 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <main class="p-6 md:p-12 lg:flex">
+        <section id="item-list" class="col-span-2 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="card card-compact w-full bg-base-100 shadow-xl h-full">
                 <figure><img src="./images/shoes-1.webp" alt="Shoes" class="h-64 w-full" /></figure>
                 <div class="card-body">
                     <h2 class="text-2xl font-semibold">Orlando Shoes</h2>
                     <p class="text-[17px] font-semibold">Price : $<span>150</span></p>
                     <p class="text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
-                    <p class="font-semibold">Quantity : <input type="number"
-                            class="px-2 py-[2px] w-12 rounded-md outline outline-1 outline-blue-900"></p>
+                    <div class="font-semibold">
+                        Quantity :
+                        <input type="number"
+                            class="px-2 py-[2px] w-12 rounded-md outline outline-1 outline-blue-900"><br>
+                        <span class="hidden ml-16 text-red-400">Enter a positive number</span>
+                    </div>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary w-full">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -82,10 +86,14 @@
                     <h2 class="text-2xl font-semibold">White Shoes</h2>
                     <p class="text-[17px] font-semibold">Price : $<span>220</span></p>
                     <p class="text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
-                    <p class="font-semibold">Quantity : <input type="number"
-                            class="px-2 py-[2px] w-12 rounded-md outline outline-1 outline-blue-900"></p>
+                    <div class="font-semibold">
+                        Quantity :
+                        <input type="number"
+                            class="px-2 py-[2px] w-12 rounded-md outline outline-1 outline-blue-900"><br>
+                        <span class="hidden ml-16 text-red-400">Enter a positive number</span>
+                    </div>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary w-full">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -95,10 +103,14 @@
                     <h2 class="text-2xl font-semibold">Pink Shoes</h2>
                     <p class="text-[17px] font-semibold">Price : $<span>120</span></p>
                     <p class="text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
-                    <p class="font-semibold">Quantity : <input type="number"
-                            class="px-2 py-[2px] w-12 rounded-md outline outline-1 outline-blue-900"></p>
+                    <div class="font-semibold">
+                        Quantity :
+                        <input type="number"
+                            class="px-2 py-[2px] w-12 rounded-md outline outline-1 outline-blue-900"><br>
+                        <span class="hidden ml-16 text-red-400">Enter a positive number</span>
+                    </div>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary w-full">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -108,10 +120,14 @@
                     <h2 class="text-2xl font-semibold">Ocean Blue Backpack</h2>
                     <p class="text-[17px] font-semibold">Price : $<span>100</span></p>
                     <p class="text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
-                    <p class="font-semibold">Quantity : <input type="number"
-                            class="px-2 py-[2px] w-12 rounded-md outline outline-1 outline-blue-900"></p>
+                    <div class="font-semibold">
+                        Quantity :
+                        <input type="number"
+                            class="px-2 py-[2px] w-12 rounded-md outline outline-1 outline-blue-900"><br>
+                        <span class="hidden ml-16 text-red-400">Enter a positive number</span>
+                    </div>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary w-full">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -121,10 +137,14 @@
                     <h2 class="text-2xl font-semibold">Black Bag</h2>
                     <p class="text-[17px] font-semibold">Price : $<span>130</span></p>
                     <p class="text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
-                    <p class="font-semibold">Quantity : <input type="number"
-                            class="px-2 py-[2px] w-12 rounded-md outline outline-1 outline-blue-900"></p>
+                    <div class="font-semibold">
+                        Quantity :
+                        <input type="number"
+                            class="px-2 py-[2px] w-12 rounded-md outline outline-1 outline-blue-900"><br>
+                        <span class="hidden ml-16 text-red-400">Enter a positive number</span>
+                    </div>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary w-full">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -134,12 +154,41 @@
                     <h2 class="text-2xl font-semibold">Gray Printed Bag</h2>
                     <p class="text-[17px] font-semibold">Price : $<span>240</span></p>
                     <p class="text-gray-500">If a dog chews shoes whose shoes does he choose?</p>
-                    <p class="font-semibold">Quantity : <input type="number"
-                            class="px-2 py-[2px] w-12 rounded-md outline outline-1 outline-blue-900"></p>
+                    <div class="font-semibold">
+                        Quantity :
+                        <input type="number"
+                            class="px-2 py-[2px] w-12 rounded-md outline outline-1 outline-blue-900"><br>
+                        <span class="hidden ml-16 text-red-400">Enter a positive number</span>
+                    </div>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary w-full">Buy Now</button>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="lg:ml-6 mt-12 lg:mt-0">
+            <div class="overflow-x-auto">
+                <table class="table w-full">
+                    <thead>
+                        <tr>
+                            <th class="text-primary">SL</th>
+                            <th class="text-primary">Name</th>
+                            <th class="text-primary">Price</th>
+                            <th class="text-primary">Quantity</th>
+                            <th class="text-primary">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Gray Printed Bag</td>
+                            <td>2000</td>
+                            <td>5</td>
+                            <td>10000</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
